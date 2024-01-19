@@ -18,7 +18,7 @@ public final class ActionCounter {
     public int getActions(int timestamp) {
         int count = 0;
         for (int action : actions) {
-            if (timestamp - action >= 0 && timestamp - action <= TIME_THRESHOLD) {
+            if (timestamp - action >= 0 && timestamp - action < TIME_THRESHOLD) {
                 count++;
             }
         }

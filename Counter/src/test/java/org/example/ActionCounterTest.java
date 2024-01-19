@@ -28,8 +28,8 @@ public class ActionCounterTest {
         counter.call(400);
         counter.call(500);
 
-        assertEquals(3, counter.getActions(600));
-        assertEquals(4, counter.getActions(400));
+        assertEquals(2, counter.getActions(600));
+        assertEquals(3, counter.getActions(400));
         assertEquals(1, counter.getActions(100));
         assertEquals(2, counter.getActions(200));
         assertEquals(3, counter.getActions(300));
